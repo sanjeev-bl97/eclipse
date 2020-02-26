@@ -17,9 +17,9 @@ public class takesnap {
 		System.setProperty("webdriver.chrome.driver","C://Users//BLTuser.BLT0206//Downloads//chromedriver.exe");
 	    WebDriver driver = new ChromeDriver(); 
 	    driver.get("https://in.linkedin.com/");
-	    TakesScreenshot ts=((TakesScreenshot)driver);
+	    TakesScreenshot ts=(TakesScreenshot)driver;
 	    File SrcFile = ts.getScreenshotAs(OutputType.FILE);
-	    FileUtils.copyFile(SrcFile,new File("C://Users//BLTuser.BLT0206//Desktop//jav//Selinium//Screenshot//fb1.png"));
+	    FileUtils.copyFile(SrcFile,new File("C://Users//BLTuser.BLT0206//Desktop//jav//Selinium//Screenshot//fb12.png"));
 	}
 
 }
