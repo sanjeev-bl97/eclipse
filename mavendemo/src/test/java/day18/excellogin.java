@@ -29,7 +29,7 @@ public class excellogin {
 			  XSSFCell cell=row.getCell(0);
 			  String un=cell.getStringCellValue();
 			  XSSFCell cell1=row.getCell(1);
-			  String pwd=cell.getStringCellValue();
+			  String pwd=cell1.getStringCellValue();
 			  System.setProperty("webdriver.chrome.driver","C:\\Users\\BLTuser.BLT0206\\Desktop\\chromedriver.exe");
 			  WebDriver driver = new ChromeDriver();
 			  driver.get("https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin");
