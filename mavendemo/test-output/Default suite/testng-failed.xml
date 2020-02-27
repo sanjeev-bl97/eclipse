@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day24.webtable">
+      <class name="day18.excellogin">
         <methods>
-          <include name="table"/>
+          <include name="excel"/>
         </methods>
-      </class> <!-- day24.webtable -->
+      </class> <!-- day18.excellogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
