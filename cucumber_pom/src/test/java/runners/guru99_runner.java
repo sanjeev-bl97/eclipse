@@ -8,7 +8,7 @@ import cucumber.api.junit.*;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/main/resources/features/Guru99.feature",
-		plugin = {"pretty", "html:reports/cucumber-html-report"},
+		plugin = {"pretty", "html:reports/cucumber-html-report/"},
 		tags = {"@tc01_guru99"},
 		glue = {"steps"},
 		monochrome = true

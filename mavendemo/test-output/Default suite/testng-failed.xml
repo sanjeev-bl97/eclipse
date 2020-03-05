@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day18.excellogin">
+      <class name="testingdemo.linkedin">
         <methods>
-          <include name="excel"/>
+          <include name="testcase3"/>
+          <include name="afterMethod"/>
+          <include name="testcase2"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- day18.excellogin -->
+      </class> <!-- testingdemo.linkedin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -35,7 +35,18 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/cucumber-core-5.4.0.jar"/>
-	<classpathentry kind="lib" path="C:/cucumber-junit-1.1.2.jar"/>
-	<classpathentry kind="lib" path="C:/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BLTuser.BLT0206/Downloads/cucumber-reporting-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BLTuser.BLT0206/Downloads/cucumber-junit-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BLTuser.BLT0206/Downloads/junit5-api-5.0.0-ALPHA.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/apiguardian-api-1.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/cucumber-core-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/cucumber-expressions-8.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/cucumber-gherkin-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/cucumber-gherkin-vintage-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/cucumber-java-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/cucumber-plugin-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/datatable-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/docstring-5.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/cucu/tag-expressions-2.0.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
