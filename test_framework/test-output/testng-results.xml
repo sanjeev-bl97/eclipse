@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38043" started-at="2020-03-05T09:47:37 IST" finished-at="2020-03-05T09:48:15 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38043" started-at="2020-03-05T09:47:37 IST" finished-at="2020-03-05T09:48:15 IST">
+      <class name="com.Testcase.login_case">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.Testcase.login_case@701fc37a]" name="startUp" is-config="true" duration-ms="12104" started-at="2020-03-05T09:47:37 IST" finished-at="2020-03-05T09:47:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="login_case1()[pri:0, instance:com.Testcase.login_case@701fc37a]" name="login_case1" duration-ms="17316" started-at="2020-03-05T09:47:49 IST" finished-at="2020-03-05T09:48:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_case1 -->
+        <test-method status="PASS" signature="account_method()[pri:0, instance:com.Testcase.login_case@701fc37a]" name="account_method" duration-ms="6089" started-at="2020-03-05T09:48:07 IST" depends-on-methods="com.Testcase.login_case.login_case1" finished-at="2020-03-05T09:48:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- account_method -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.Testcase.login_case@701fc37a]" name="close" is-config="true" duration-ms="2418" started-at="2020-03-05T09:48:13 IST" finished-at="2020-03-05T09:48:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.Testcase.login_case -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
