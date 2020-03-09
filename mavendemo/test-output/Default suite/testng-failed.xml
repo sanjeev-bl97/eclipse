@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testingdemo.linkedin">
+      <class name="extentreport.report">
         <methods>
-          <include name="testcase3"/>
-          <include name="afterMethod"/>
-          <include name="testcase2"/>
-          <include name="beforeMethod"/>
+          <include name="startReport1"/>
+          <include name="demoReportfail"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
         </methods>
-      </class> <!-- testingdemo.linkedin -->
+      </class> <!-- extentreport.report -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

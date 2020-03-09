@@ -145,5 +145,7 @@
 	<classpathentry kind="lib" path="C:/report/jsoup-1.9.2.jar"/>
 	<classpathentry kind="lib" path="C:/report/mongodb-driver-3.3.0.jar"/>
 	<classpathentry kind="lib" path="C:/report/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BLTuser.BLT0206/Downloads/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/BLTuser.BLT0206/Downloads/extentreports-2.40.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
