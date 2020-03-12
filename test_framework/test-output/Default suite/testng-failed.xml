@@ -5,6 +5,7 @@
     <classes>
       <class name="com.Testcase.login_case">
         <methods>
+          <include name="login_case2"/>
           <include name="close"/>
           <include name="login_case1"/>
           <include name="startUp"/>

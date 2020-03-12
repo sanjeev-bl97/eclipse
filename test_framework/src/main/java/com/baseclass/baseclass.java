@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class baseclass {
 	protected WebDriver driver;
@@ -28,6 +29,13 @@ public class baseclass {
 					System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");
 					driver=new ChromeDriver();
 
+				}
+				else if(browser.equalsIgnoreCase("explorer"))
+				{
+					
+					System.setProperty("webdriver.ie.driver","C://Selenium//IEDriverServer.exe");
+				    WebDriver driver1 = new InternetExplorerDriver();
+					
 				}
  
 				//Maximize window and launchs the specified url
@@ -47,7 +55,7 @@ public class baseclass {
 	 //Used to take screenshot
 	 public void screenshot(String path) throws IOException {
 		 
-		 TakesScreenshot ts=(TakesScreenshot)driver;
+		    TakesScreenshot ts=(TakesScreenshot)driver;
 		    File SrcFile = ts.getScreenshotAs(OutputType.FILE);
 		    FileUtils.copyFile(SrcFile,new File(path));
 		 

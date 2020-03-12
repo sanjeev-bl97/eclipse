@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.Testcase.login_case"/>
-      <class name="com.Testcase.search_case"/>
       <class name="com.Testcase.account_case"/>
+        <class name="com.Testcase.search_case"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
