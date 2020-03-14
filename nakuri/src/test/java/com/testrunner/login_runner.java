@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/main/resources/feature/naukri_feature.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
-		tags = {"@tc01_login"},
+		tags = {"@tc01_login,@tc02_search,@tc03_more,@tc04_filter"},
 		glue = {"com.stepdefinition"},
 		monochrome = true
 		)

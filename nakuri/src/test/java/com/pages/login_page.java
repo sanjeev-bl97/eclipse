@@ -90,6 +90,6 @@ public class login_page {
 	}
 	public void close_app() {
 		
-		driver.quit();
+		//driver.quit();
 	}
 }

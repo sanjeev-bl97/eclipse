@@ -15,13 +15,13 @@ public class search_step {
 	
 	@Given("^user launchs the chrome browser for search scenario$")
 	public void user_launched_the_chrome_browser_for_search_scenario() throws Throwable {
-		ss.launchChrome();
-	    ss.url();
+		///ss.launchChrome();
+	    //ss.url();
 	}
 
 	@When("^user opens naukri homepage for search scenario$")
 	public void user_opens_naukri_homepage_for_search_scenario() throws Throwable {
-	   ss.login_search();
+	  // ss.login_search();
 	}
 
 	@Then("^user search the job$")

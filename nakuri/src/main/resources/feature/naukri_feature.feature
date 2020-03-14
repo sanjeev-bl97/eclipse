@@ -16,7 +16,7 @@ Scenario:
 	Given  user launchs the chrome browser for search scenario
 	When  user opens naukri homepage for search scenario
 	Then user search the job 
-	@tc03_more
+@tc03_more
 Scenario:	
 	To check that the user can click more and move to any field
 	
@@ -24,7 +24,7 @@ Scenario:
 	When  user opens the naukri homepage for more scenario
 	Then user login into account for more scenario
 	And  user click mores and move to any field	
-	@tc04_filter
+@tc04_filter
 Scenario:	
 	To check that the user is able to apply filter in search results
 	
