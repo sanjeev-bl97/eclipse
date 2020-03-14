@@ -61,7 +61,7 @@ public class login_page {
 
 	
 	
-	public void loginn() throws IOException
+	public void loginn() throws IOException, InterruptedException
 	{
 		for(int i=1;i<=2;i++)
 		{
@@ -76,10 +76,20 @@ public class login_page {
 	    
 		Actions act = new Actions(driver);
 		act.moveToElement(a);
-		act.moveToElement(b).click().build().perform();	    
+		Thread.sleep(2000);
+		act.moveToElement(b).click(b).build().perform();	
+		Thread.sleep(2000);
+		String windowTitle= getCurrentWindowTitle();
+		String mainWindow = getMainWindowHandle(driver);
+		Assert.assertTrue(closeAllOtherWindows(mainWindow));
+		Assert.assertTrue(windowTitle.contains("Jobs - Recruitment"));
 		
 			
 		}
-		driver.close();
+		
+	}
+	public void close_app() {
+		
+		driver.quit();
 	}
 }

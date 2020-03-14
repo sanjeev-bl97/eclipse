@@ -70,8 +70,8 @@ public class more_page {
 		WebElement b =driver.findElement(By.xpath("/html/body/div[1]/div/div/ul[1]/li[6]/div/ul[1]/li[2]/a"));
 		Actions act = new Actions(driver);
 		act.moveToElement(a);
-		act.moveToElement(b).click().build().perform();
-		Thread.sleep(8000);
-		driver.close();
+		act.moveToElement(b).click(b).build().perform();
+		Thread.sleep(5000);
+		driver.quit();
 	}
 }

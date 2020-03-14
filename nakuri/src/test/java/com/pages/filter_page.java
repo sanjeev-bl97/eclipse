@@ -74,11 +74,10 @@ public class filter_page {
 		driver.findElement(By.xpath("//*[@id=\"salaryDroope-salaryFor\"]")).click();
 	    driver.findElement(By.xpath("//*[@id=\"ul_salaryDroope-salary\"]/ul/li[5]/a")).click();
 		driver.findElement(By.xpath("//*[@id=\"search-jobs\"]/button")).click();
-		Thread.sleep(8000);
 		driver.findElement(By.xpath("//*[@id=\"acord\"]/div[2]/a[1]")).click();
-		Thread.sleep(8000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"acord\"]/div[2]/a[2]")).click();
-		Thread.sleep(8000);
+		Thread.sleep(4000);
 		
 		
 		

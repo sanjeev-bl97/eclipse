@@ -11,7 +11,7 @@ public class login_step {
 
 	
 		login_page lo = new login_page();
-		@Given("^user launched the chrome browser$")
+		@Given("^user launchs the chrome browser$")
 		public void user_launched_the_chrome_browser() throws Throwable {
 		    lo.launchChrome();
 		}
@@ -21,9 +21,10 @@ public class login_step {
 		    lo.url();
 		}
 
-		@Then("^user clicks login$")
+		@Then("^user login into the account$")
 		public void user_clicks_login() throws Throwable {
 		    lo.loginn();
+		    lo.close_app();
 		}
 
 		

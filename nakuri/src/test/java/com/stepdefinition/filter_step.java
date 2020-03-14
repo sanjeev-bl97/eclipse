@@ -11,7 +11,7 @@ public class filter_step {
 	
 	filter_page f=new filter_page();
 	
-	@Given("^user  launchs the chrome browser for filter option$")
+	@Given("^user launchs the chrome browser for filter option$")
 	public void user_launchs_the_chrome_browser_for_filter_option() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    f.launchChrome();
@@ -24,7 +24,7 @@ public class filter_step {
 		f.url();
 	}
 
-	@Then("^user clicks login button for filter option$")
+	@Then("^user login into account for filter option$")
 	public void user_clicks_login_button_for_filter_option() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		f.login_search();
