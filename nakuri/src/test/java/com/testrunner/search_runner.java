@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/main/resources/feature/naukri_feature.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
 		tags = {"@tc02_search"},
-		glue = {"steps"},
+		glue = {"com.stepdefinition"},
 		monochrome = true
 		)
 public class search_runner {

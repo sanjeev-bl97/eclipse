@@ -7,10 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/main/resources/feature/naukri.feature",
+		features = "src/main/resources/feature/naukri_feature.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
 		tags = {"@tc03_more"},
-		glue = {"steps"},
+		glue = {"com.stepdefinition"},
 		monochrome = true
 		)
 public class more_runner {

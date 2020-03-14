@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/main/resources/feature/naukri_feature.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
 		tags = {"@tc04_filter"},
-		glue = {"steps"},
+		glue = {"com.stepdefinition"},
 		monochrome = true
 		)
 public class filter_runner {
