@@ -11,51 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.excel.excel_utility;
 
-public class search_page {
-	static WebDriver driver;
-	excel_utility eu = new excel_utility();
+public class search_page extends login_page {
 	
-	public void launchChrome()
-	{
-		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-	}
-	public void url()
-	{
-		driver.get("https://www.naukri.com/");
-		String windowTitle= getCurrentWindowTitle();
-		String mainWindow = getMainWindowHandle(driver);
-		Assert.assertTrue(closeAllOtherWindows(mainWindow));
-		Assert.assertTrue(windowTitle.contains("Jobs - Recruitment"));
-	}
-		
-	public String getMainWindowHandle(WebDriver driver) {
-		return driver.getWindowHandle();
-	}
-
-	public String getCurrentWindowTitle() {
-		String windowTitle = driver.getTitle();
-		return windowTitle;
-	}
 	
-	//To close all the other windows except the main window.
-	public static boolean closeAllOtherWindows(String openWindowHandle) {
-		Set<String> allWindowHandles = driver.getWindowHandles();
-		for (String currentWindowHandle : allWindowHandles) {
-			if (!currentWindowHandle.equals(openWindowHandle)) {
-				driver.switchTo().window(currentWindowHandle);
-				driver.close();
-			}
-		}
-		
-		driver.switchTo().window(openWindowHandle);
-		if (driver.getWindowHandles().size() == 1)
-			return true;
-		else
-			return false;
-	}
+	
+	
 	
 	public void login_search() throws IOException
 	{   
@@ -74,7 +34,7 @@ public class search_page {
 		driver.findElement(By.xpath("//*[@id=\"salaryDroope-salaryFor\"]")).click();
 	    driver.findElement(By.xpath("//*[@id=\"ul_salaryDroope-salary\"]/ul/li[5]/a")).click();
 		driver.findElement(By.xpath("//*[@id=\"search-jobs\"]/button")).click();
-		Thread.sleep(8000);
+		Thread.sleep(4000);
 		driver.close();
 		
 	}
