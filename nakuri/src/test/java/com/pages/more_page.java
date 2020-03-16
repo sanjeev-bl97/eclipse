@@ -1,14 +1,12 @@
 package com.pages;
 
-import java.io.IOException;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
+
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.interactions.Actions;
 
 public class more_page extends login_page {
