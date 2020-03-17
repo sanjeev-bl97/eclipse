@@ -4,7 +4,7 @@ import com.pages.image_page;
 import com.pages.invalid_login_page;
 import com.pages.invalid_register_page;
 import com.pages.login_page;
-import com.pages.more_page;
+import com.pages.recruiters_page;
 import com.pages.register_page;
 import com.pages.resume_page;
 import com.pages.search_page;
@@ -15,11 +15,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class login_step {
+public class Step_definition {
 	
         login_page lo = new login_page();
 		search_page ss=new search_page();
-		more_page mo = new more_page();
+		recruiters_page rp = new recruiters_page();
 		filter_page f=new filter_page();
 		resume_page r=new resume_page();
 		image_page im=new image_page();
@@ -46,9 +46,6 @@ public class login_step {
 		    // Write code here that turns the phrase above into concrete actions
 			ireg.invalid_register();
 		}
-		
-		
-		
 		
 		
 		//Valid Login
@@ -91,15 +88,15 @@ public class login_step {
 		  ss.search_job();
 		}
 
-		//more
+		//Recruiters page
 		
-        @And("^user click mores and move to any field$")
-		public void user_can_click_more_and_move_to_any_field() throws Throwable {
+        @And("^user click recruiters and browse for recruiters$")
+		public void user_click_recruiters_and_browse_for_recruiters() throws Throwable {
         ss.login_search();
-        	mo.more();
+        	rp.more();
 		}
 		
-		//filter
+		//Filter operation
 		
 		@Then("^user applys filter$")
 		public void user_applys_filter() throws Throwable {

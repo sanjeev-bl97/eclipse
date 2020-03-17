@@ -3,7 +3,7 @@ Feature: naukri website
 
 @tc01_Valid_Register
 Scenario:	
-	To check that the user is not able to register an existing account
+	To check that the user is able to register an account
 	
 	Given  user launchs the chrome browser 
 	When  user opens naukri homepage 
@@ -41,13 +41,15 @@ Scenario:
 	When  user opens naukri homepage
 	When  user login into the account
 	Then user search the job 
-@tc06_More
+
+@tc06_Recruiters
 Scenario:	
-	To check that the user can click more and move to any field
+	To check that the user can search for recruiters
 	
 	Given  user launchs the chrome browser 
 	When  user opens naukri homepage
-	And  user click mores and move to any field	
+	And  user click recruiters and browse for recruiters
+
 @tc07_Filter
 Scenario:	
 	To check that the user is able to apply filter in search results

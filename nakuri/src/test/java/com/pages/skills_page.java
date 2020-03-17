@@ -26,8 +26,10 @@ public class skills_page extends login_page {
 		
 		driver.findElement(By.xpath("//*[contains(text(),'ADD DETAILS')]")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"itSkillSugg\"]")).sendKeys("Java");
+		driver.findElement(By.xpath("//*[@id=\"itSkillSugg\"]")).sendKeys("java");
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"itSkillSugg\"]")).sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"version\"]")).sendKeys("12");
 		driver.findElement(By.xpath("//*[@id=\"lastUsedDroopeFor\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"ul_lastUsedDroope\"]/ul/li[2]/a")).click();

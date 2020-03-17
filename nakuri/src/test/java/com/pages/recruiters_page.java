@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.interactions.Actions;
 
-public class more_page extends login_page {
+public class recruiters_page extends login_page {
 	
 	
 	
@@ -40,7 +40,7 @@ public class more_page extends login_page {
 	    	driver.switchTo().window(winHandle);
 	    	
 	    }
-	    driver.findElement(By.xpath("//*[@id=\"skill\"]/div[1]/div[2]/input")).sendKeys("Java Developer");
+	    driver.findElement(By.xpath("//*[@id=\"skill\"]/div[1]/div[2]/input")).sendKeys("Java developer");
 	    driver.findElement(By.xpath("//*[@id=\"skill\"]/div[1]/div[2]/input")).sendKeys(Keys.ENTER);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//*[@id=\"hvAtvJb\"]")).click();

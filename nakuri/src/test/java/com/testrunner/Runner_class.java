@@ -9,11 +9,11 @@ import cucumber.api.junit.Cucumber;
 		features = "src/main/resources/feature/naukri_feature.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
 		//tags = {"@tc01_login,@tc02_search,@tc03_more,@tc04_filter"},
-	    tags = {"@tc08_Resume_upload"},
+	      //tags = {"@tc06_Recruiters"},
 		glue = {"com.stepdefinition"},
 		monochrome = true
 		)
 
-public class login_runner {
+public class Runner_class {
 
 }
