@@ -20,16 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/test/resources/Testdata/Desert.jpg</name>
-			<type>1</type>
-			<location>C:/Users/Public/Pictures/Sample Pictures/Desert.jpg</location>
-		</link>
-		<link>
-			<name>src/test/resources/Testdata/test.docx</name>
-			<type>1</type>
-			<location>C:/Users/BLTuser.BLT0206/Documents/test.docx</location>
-		</link>
-	</linkedResources>
 </projectDescription>
