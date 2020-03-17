@@ -20,10 +20,11 @@ public class skills_page extends login_page {
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/span/div/div/div/div[2]/div/div[2]/div[1]/div/div[1]/div[2]/div")).click();
 		Thread.sleep(2000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("window.scrollBy(0,1100)");
 		
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"lazyITSkills\"]/div/div[1]/div/div[1]/span[3]")).click();
+		
+		driver.findElement(By.xpath("//*[contains(text(),'ADD DETAILS')]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"itSkillSugg\"]")).sendKeys("Java");
 		driver.findElement(By.xpath("//*[@id=\"itSkillSugg\"]")).sendKeys(Keys.ENTER);
@@ -37,6 +38,8 @@ public class skills_page extends login_page {
 		
 		driver.findElement(By.xpath("//*[@id=\"saveITSkills\"]")).click();
 		
+		Thread.sleep(2000);
+		driver.close();
 
 	
 	}

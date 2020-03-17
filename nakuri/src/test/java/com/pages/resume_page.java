@@ -10,11 +10,13 @@ public class resume_page extends login_page {
 
 		
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/span/div/div/div/div[2]/div/div[2]/div[1]/div/div[1]/div[2]/div")).click();
-		driver.findElement(By.id("attachCV")).sendKeys("C:\\Users\\BLTuser.BLT0206\\Documents\\test.docx");
+		driver.findElement(By.id("attachCV")).sendKeys("src\\test\\resources\\Testdata\\test.docx");
+		Thread.sleep(3000);
+		driver.findElement(By.linkText("DELETE RESUME")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[5]/div[7]/div/div/button")).click();
 		
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/span/div/div/div/div/div/div[1]/div[1]/div/div[1]/div/div[1]/div/em")).click();
-		driver.findElement(By.id("fileUpload")).sendKeys("C:\\Users\\Public\\Pictures\\Sample Pictures\\Desert.jpg");
-		driver.findElement(By.xpath("//*[@id=\"submit\"]")).click();
+		Thread.sleep(2000);
 		driver.close();
 		
 		
